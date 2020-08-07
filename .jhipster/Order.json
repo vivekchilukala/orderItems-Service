@@ -1,0 +1,41 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "OrderItems",
+    "relationships": [
+        {
+            "relationshipName": "addressId",
+            "otherEntityName": "shippingAddress",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "shippingAddress"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "customerName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "orderDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "shippingAddress",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "total",
+            "fieldType": "Float"
+        }
+    ],
+    "changelogDate": "20200805175558",
+    "dto": "mapstruct",
+    "searchEngine": false,
+    "service": "serviceClass",
+    "entityTableName": "jhi_order",
+    "databaseType": "sql",
+    "readOnly": false,
+    "jpaMetamodelFiltering": false,
+    "pagination": "no",
+    "microserviceName": "OrderItems"
+}

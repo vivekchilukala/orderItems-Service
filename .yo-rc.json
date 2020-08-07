@@ -1,0 +1,38 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.vivek.orderitems"
+    },
+    "jhipsterVersion": "6.6.0",
+    "applicationType": "microservice",
+    "baseName": "orderitems",
+    "packageName": "com.vivek.orderitems",
+    "packageFolder": "com/vivek/orderitems",
+    "serverPort": "8082",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZGQ1OWMyOGE0ODg0YjgwYjQ2ZjZlZjk2MDBmZjM1MGFhODMwMGE3YzM5NzI3MGVkYzJjZmM2ZGFiNjZiYzM0NDE0YWM2YjIzYjhhYzgzZTk0M2NkZmY4NWFkOTc0NGZhMDRkZDMwZTNiMzUzNDA1NmE5NWI1MDE0NzNlZDU3MDk=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1596649168196,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

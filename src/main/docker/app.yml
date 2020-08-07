@@ -1,0 +1,14 @@
+version: '2'
+services:
+  orderitems-app:
+    image: orderitems
+    environment:
+      - _JAVA_OPTIONS=-Xmx512m -Xms256m
+      - SPRING_PROFILES_ACTIVE=prod,swagger
+      - MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED=true
+      - SPRING_DATASOURCE_URL=jdbc:mysql://orderitems-mysql:3306/orderitems?useUnicode=true&characterEncoding=utf8&useSSL=false&createDatabaseIfNotExist=true
+      - JHIPSTER_SLEEP=30 # gives time for other services to boot before the application
+  orderitems-mysql:
+    extends:
+      file: mysql.yml
+      service: orderitems-mysql
